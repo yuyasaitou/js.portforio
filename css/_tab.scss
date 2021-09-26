@@ -1,0 +1,31 @@
+.tab-list {
+    display: flex;
+    justify-content: center;
+}
+
+.tab-item{
+    display: block;
+    background: #ffffff;
+    color: #333333;
+    padding: 5px 10px;
+}
+
+.tab-item.active {
+    background: #333333;
+    color: #ffffff;
+    border-radius: 5px 5px 0 0;
+}
+
+.tab-inner.active {
+    display: block;
+}
+.tab-inner{
+display: none;
+background: #333333;
+color: #ffffff;
+padding: 15px;
+}
+
+.tab-text {
+    text-align: justify;
+}

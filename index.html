@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PORTFORIO</title>
+        <meta name="description" content="portforioを作ってみました">
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="https://kit.fontawesome.com/495b7b5102.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <header id="js-header" class="header">
+            <div class="header-inner">
+              <h1 class="main-title">JavaScriptで作る</h1>
+              <nav id="js-nav" class="nav">
+                <ul class="list">
+                  <li class="list-item"><a href="#slider-link">スライダー</a></li>
+                  <li class="list-item"><a href="#tab-link">タブメニュー</a></li>
+                  <li class="list-item"><a href="#modal-link">モーダルウィンドウ</a></li>
+                  <li class="list-item"><a href="#accordion-link">アコーディオンメニュー</a></li>
+                </ul>
+              </nav>
+              <button id="js-nav-btn" class="nav-btn" type="button">
+                <div id="navicon" class="nav-icon"><i class="fas fa-bars"></i></div>
+                <div id=""class="batu"><i class="fas fa-times"></i></div>
+              </button>
+            </div>
+        </header>
+        <main>
+            <section id="lead" class="lead">
+              <div class="container">
+                <h2 class="lead-title">
+                  Webサイトによくある機能を<br>JavaScriptだけで実装。
+                </h2>
+                <p class="lead-text">
+                  普段はjQueryやプラグインで実装している機能をJavaScriptのみで作ってみました。
+                  ハンバーガー(ドロワー)ーメニュー・タブメニュー・アコーディオンメニュー・TOPへ戻るボタン・モーダルウィンドウ・スライダー・ページ内リンクの
+                  7つを作りました。
+                </p>
+              </div>
+            </section>
+            <section id="slider-link">
+              <div class="container slideunder">
+              <ul id="slider-ul">
+                <li id="slider-li" class="slider-li"><img alt="pan" class="slideimag" src="img/bread_1.jpg"></li>
+                <li id="slider-li" class="slider-li"><img alt="pan" class="slideimag" src="img/bread_2.jpg"></li>
+                <li id="slider-li" class="slider-li"><img alt="pan" class="slideimag" src="img/bread_3.jpg"></li>
+                <li id="slider-li" class="slider-li"><img alt="pan" class="slideimag" src="img/bread_4.jpg"></li>
+              </ul>
+                <button id="prev" type="button">&laquo;</button>
+                <button id="next" type="button">&raquo;</button>
+              </div>
+           
+              <nav class="indicater">
+                 <!---
+                <button class="nav-b current"></botton>
+                <button class="nav-b"></botton>
+                <button class="nav-b"></botton>
+                <button class="nav-b"></botton>
+               --></nav>
+           
+            </section>
+
+            <section id="animate">
+            <button id="js-top-btn" class="top-btn" type="button">
+              <div class="arrow">
+                <i class="fas fa-arrow-up" height="2.5rem" width="2.5rem"></i>
+              </div>
+            </button>
+          </section>
+
+            <section id="tab-link">
+              <div class="container">
+                <h2 class="section-title">タブメニュー</h2>
+                <ul class="tab-list">
+                  <li>
+                    <a data-id="summary" class="tab-item active" href="#" role="tab">概要</a>
+                  </li>
+                  <li>
+                    <a data-id="service" class="tab-item" href="#" role="tab">サービス</a>
+                  </li>
+                  <li>
+                    <a data-id="contact" class="tab-item" href="#" role="tab">お問い合わせ</a>
+                  </li>
+                </ul>
+                <div id="summary" class="tab-inner active">
+                  <p class="tab-text">
+                    概要概要概要概要概要概要概要概要概要概要
+                    概要概要概要概要概要概要概要概要概要概要
+                    概要概要概要概要概要概要概要概要概要概要
+                    概要概要概要概要概要概要概要概要概要概要
+                    概要概要概要概要概要概要概要概要概要概要
+                  </p>
+                </div>
+                <div id="service" class="tab-inner">
+                  <p class="tab-text">
+                    サービスサービスサービスサービスサービスサービスサービスサービスサービスサービス
+                    サービスサービスサービスサービスサービスサービスサービスサービスサービスサービス
+                    サービスサービスサービスサービスサービスサービスサービスサービスサービスサービス
+                    サービスサービスサービスサービスサービスサービスサービスサービスサービスサービス
+                    サービスサービスサービスサービスサービスサービスサービスサービスサービスサービス
+                  </p>
+                </div>
+                <div id="contact" class="tab-inner">
+                  <p class="tab-text">
+                    お問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせ
+                    お問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせ
+                    お問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせ
+                    お問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせ
+                    お問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせ
+                  </p>
+                </div>
+              </div>
+            </section>
+            <section id="modal-link">
+              <div class="container">
+                <h2 class="section-title">モーダル</h2>
+                <div id="js-modal" class="modal">
+                  <div class="modal-container">
+                    <div class="modal-inner">
+                      <h3 class="modal-title">モーダルです。</h3>
+                      <p class="modal-text">
+                        テキストテキストテキストテキストテキスト
+                      </p>
+                      <button id="js-close" class="modal-close" type="button">
+                        閉じる
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <button id="js-open" class="modal-open" type="button">
+                  モーダルを開く
+                </button>
+              </div>
+            </section>
+            <section id="accordion-link">
+              <div class="container">
+                <h2 class="section-title">アコーディオンメニュー</h2>
+                <button data-btn="js-button1" data-icon="js-icon1" class="accordion-btn" type="button">
+                  アコーディオン1(クリック！)
+                  <span class="accordion-icon js-icon1"></span>
+                  <span class="accordion-icon js-icon1"></span>
+                </button>
+                <ul id="js-button1" class="accordion-list-js">
+                  <li class="accordion-item">アコーディオン1</li>
+                  <li class="accordion-item">アコーディオン2</li>
+                  <li class="accordion-item">アコーディオン3</li>
+                  <li class="accordion-item">アコーディオン4</li>
+                  <li class="accordion-item">アコーディオン5</li>
+                </ul>
+                <button data-btn="js-button2" data-icon="js-icon2" class="accordion-btn" type="button">
+                  アコーディオン2(クリック！)
+                  <span class="accordion-icon js-icon2"></span>
+                  <span class="accordion-icon js-icon2"></span>
+                </button>
+                <ul id="js-button2" class="accordion-list-js">
+                  <li class="accordion-item">アコーディオン1</li>
+                  <li class="accordion-item">アコーディオン2</li>
+                  <li class="accordion-item">アコーディオン3</li>
+                  <li class="accordion-item">アコーディオン4</li>
+                  <li class="accordion-item">アコーディオン5</li>
+                </ul>
+                <button data-btn="js-button3" data-icon="js-icon3" class="accordion-btn" type="button">
+                  アコーディオン3(クリック！)
+                  <span class="accordion-icon js-icon3"></span>
+                  <span class="accordion-icon js-icon3"></span>
+                </button>
+                <ul id="js-button3" class="accordion-list-js">
+                  <li class="accordion-item">アコーディオン1</li>
+                  <li class="accordion-item">アコーディオン2</li>
+                  <li class="accordion-item">アコーディオン3</li>
+                  <li class="accordion-item">アコーディオン4</li>
+                  <li class="accordion-item">アコーディオン5</li>
+                </ul>
+              </div>
+            </section>
+          </main>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <small>©JavaScriptで作る</small>
+      </div>
+    </footer>
+
+
+    <script src="js/topbtn.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/humbargar.js"></script>
+    <script src="js/tab.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="js/inlink.js"></script>
+    
+</body>
+</html>
+
